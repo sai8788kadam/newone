@@ -1,0 +1,28 @@
+<html>
+<head>
+<title>My page validating in email address </title>
+<script>
+function checkemail(){
+var email=document.getElementById("t1");
+var re="[a-zA-Z0-9]+[@]+[a-zA-Z0-9]+[.]+[a-zA-Z0-9]";
+if(email.value.match(re))
+{
+alert("valid email");
+}
+else{
+alert("In valid email");
+}
+}
+</script>
+</head>
+<body>
+<center>
+<h1>validating email address in javascript </h1>
+<hr/>
+<h2>Enter email address </h2><br/>
+<input type="text" name="t1" id="t1"/><br/><br/>
+<input type="button" id="b1" 
+onclick="checkemail()" value="checkemail"/><br/>
+</center>
+</body>
+</html>
